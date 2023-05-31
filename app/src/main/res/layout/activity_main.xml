@@ -7,10 +7,10 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/txt_Titulo"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Aplicativo Curso Android"
+        android:layout_height="48dp"
+        android:text="@string/txt_hint_edit_titulo"
         android:textSize="22sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -21,18 +21,20 @@
 
 
     <EditText
-        android:id="@+id/editTextText7"
+        android:id="@+id/edit_contato"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="48dp"
         android:ems="10"
         android:inputType="text"
-        android:text="Telefone Para Contato"
+        android:text="@string/txt_hint_tel_contato"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextText6"
-        app:layout_constraintVertical_bias="0.058" />
+        app:layout_constraintTop_toBottomOf="@+id/edit_Nome_Curso"
+        app:layout_constraintVertical_bias="0.058"
+        android:autofillHints=""
+        tools:ignore="LabelFor" />
 
 
     <androidx.constraintlayout.widget.Guideline
@@ -43,88 +45,85 @@
         app:layout_constraintGuide_begin="20dp" />
 
     <EditText
-        android:id="@+id/editTextText"
+        android:id="@+id/edit_Sobrenome"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="48dp"
         android:ems="10"
         android:inputType="text"
-        android:text="Sobrenome"
+        android:text="@string/txt_hint_edit_sobrenome"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextText5"
+        app:layout_constraintTop_toBottomOf="@+id/edit_primeiro_nome"
         app:layout_constraintVertical_bias="0.038" />
 
     <EditText
-        android:id="@+id/editTextText6"
+        android:id="@+id/edit_Nome_Curso"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="48dp"
         android:ems="10"
         android:inputType="text"
-        android:text="Nome Do Curso Desejado"
+        android:text="@string/txt_hint_nome_curso"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextText"
+        app:layout_constraintTop_toBottomOf="@+id/edit_Sobrenome"
         app:layout_constraintVertical_bias="0.033" />
 
     <EditText
-        android:id="@+id/editTextText5"
+        android:id="@+id/edit_primeiro_nome"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="48dp"
         android:layout_marginTop="44dp"
         android:ems="10"
         android:inputType="text"
-        android:text="Primeiro Nome"
+        android:text="@string/txt_hint_edit_primeiro_nome"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.079"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/txt_Titulo"
         app:layout_constraintVertical_bias="0.0" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btn_limpar"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="48dp"
         android:layout_marginStart="16dp"
         android:layout_marginBottom="68dp"
-        android:background="@color/Blue"
-        android:text="Limpar"
+        android:text="@string/txt_btn_limpar"
         app:layout_constraintBottom_toTopOf="@+id/button3"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextText7"
+        app:layout_constraintTop_toBottomOf="@+id/edit_contato"
         app:layout_constraintVertical_bias="1.0" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/btn_Salvar"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="48dp"
         android:layout_marginStart="196dp"
         android:layout_marginBottom="68dp"
-        android:background="@color/Blue"
-        android:text="Salvar"
+        android:text="@string/txt_btn_salvar"
         app:layout_constraintBottom_toTopOf="@+id/button3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.058"
-        app:layout_constraintStart_toEndOf="@+id/button"
-        app:layout_constraintTop_toBottomOf="@+id/editTextText7"
+        app:layout_constraintStart_toEndOf="@+id/btn_limpar"
+        app:layout_constraintTop_toBottomOf="@+id/edit_contato"
         app:layout_constraintVertical_bias="1.0" />
 
     <Button
         android:id="@+id/button3"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="48dp"
         android:layout_margin="16dp"
         android:layout_marginBottom="16dp"
-        android:background="@color/Blue"
-        android:text="Finalizar"
+        android:text="@string/txt_btn_finalizar"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextText7"
+        app:layout_constraintTop_toBottomOf="@+id/edit_contato"
         app:layout_constraintVertical_bias="0.636" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
